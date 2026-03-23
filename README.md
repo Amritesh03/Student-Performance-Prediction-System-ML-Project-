@@ -9,11 +9,11 @@ The goal is to demonstrate an **end-to-end ML workflow** including data preproce
 ## 📂 Dataset
 - **Size:** 200 records × 6 features  
 - **Features Include:**  
-  - Study hours  
+  - hours_study 
   - Attendance  
-  - Previous scores  
-  - Co-curricular involvement  
-  - Other academic indicators  
+  - internal_marks  
+  - previous_cgpa 
+  - Other academic indicators 
 
 ---
 
@@ -34,14 +34,21 @@ The goal is to demonstrate an **end-to-end ML workflow** including data preproce
    - Identified trends and feature importance  
 
 3. **Modeling & Evaluation**  
-   - Trained regression models using Scikit-learn  
-   - Evaluated using R² Score and Mean Squared Error (MSE)  
+   - Trained LinearRegression and RandomForestResgressor models using Scikit-learn  
+   - Evaluated using MAE (Mean Absolute Error), Mean Squared Error (MSE) and R² Score.
 
 ---
 
 ## 📊 Results
-- **R² Score:** 0.229  
-- **MSE:** 20.33  
+- **🔹 Linear Regression Performance**
+MAE: 2.708036470689875
+MSE: 10.614187967884838
+R2 Score: 0.597803904995639
+
+- **🔹 Random Forest Performance**
+MAE: 2.649565417458491
+MSE: 10.665681546251983
+R2 Score: 0.5958526943896341  
 - Established baseline performance and explored improvements with **Random Forest** and **Neural Networks** for future iterations.  
 
 ---
